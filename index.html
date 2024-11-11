@@ -439,84 +439,14 @@ I﻿
     </div>
 
     <!--Bootstrap JS-->
-    <script src="js/bootstrap.bundle.min.js"></script>
+
+    
     <!-- Swiper JS-->
-    <script src="js/swiper.js"></script>
-    <!-- Pages JS Common-->
-    <script src="js/common.js"></script>
+   
+    <!-- Pages JS Commo
 
         <script>
-
-            let tabsArray = document.querySelectorAll(".tabs li");
-            let divs = document.querySelector(".one");
-            tabsArray.forEach((ele) => {
-                ele.addEventListener("click", function (e) {
-                    tabsArray.forEach((ele) => {
-                        if(ele.classList.contains("project-active"))
-                         ele.classList.remove("project-active");
-                    });
-                     e.currentTarget.classList.add("project-active");
-                    var type=ele.getAttribute('data-type');
-                    var project=[];
-                    if(type=="all"){getAllProjects(6,"all",e)}
-                    else if(type=="apartment")
-                        getAllProjects(6,"apartment",e);
-                    else if(type=="villa")
-                        getAllProjects(6,"villa",e)
-                    else if(type=="sold")
-                        getAllProjects(6,"sold",e)
-                    else if(type=="forsale")
-                        getAllProjects(6,"forsale",e);
-                    
-                });
-            });
-    
-
-            var swtestomnial = new Swiper(".mySwiper", {
-                    slidesPerView: 1,
-                    spaceBetween: 10,
-                    autoplay: {
-                        delay: 5000,
-                        disableOnInteraction:false,
-                    },
-                    centeredSlides: true,
-                    loop:true,
-                    breakpoints: {
-                    "@0.00": {
-                        slidesPerView: 1,
-                        spaceBetween: 5,
-                    },
-                    "@2.00": {
-                        slidesPerView: 3,
-                        spaceBetween: 10,
-                    },
-                },
-            });
-            var swipartner = new Swiper(".swpartners", {
-                    slidesPerView: 1,
-                    spaceBetween: 10,
-                    autoplay: {
-                        delay: 5000,
-                        disableOnInteraction:false,
-                    },
-                    centeredSlides: true,
-                    loop:true,
-                    pagination: {
-                        el: ".swiper-pagination",
-                        clickable: true,
-                    },
-                    breakpoints: {
-                    "@0.00": {
-                        slidesPerView: 2,
-                        spaceBetween: 2,
-                    },
-                    "@1.00": {
-                        slidesPerView: 3,
-                        spaceBetween: 5,
-                    },
-                    "@2.00": {
-                        slidesPerView: 6,
-                        spaceBetween: 10,
+: 10,
                     },
                 },
             });
