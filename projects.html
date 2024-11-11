@@ -212,7 +212,7 @@
 
     <!-- Bootstrap JS-->
 
-    <script src="js/bootstrap.bundle.min.js"></script>
+   
 
     <!-- Pages JS Common-->
     <script src="js/common.js"></script>
@@ -229,15 +229,7 @@
         e.currentTarget.classList.add("project-active");
                     var type=ele.getAttribute('data-type');
                     var project=[];
-                    if(type=="all"){getAllProjects(0,"all",e)}
-                    else if(type=="apartment")
-                        getAllProjects(0,"apartment",e);
-                    else if(type=="villa")
-                        getAllProjects(0,"villa",e)
-                    else if(type=="sold")
-                        getAllProjects(0,"sold",e)
-                    else if(type=="forsale")
-                        getAllProjects(0,"forsale",e);
+                    
                     
                 });
             });
